@@ -1,7 +1,7 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import AllMeetupsPage from "./pages/AllMeetups";
-import NewMeetupPage from "./pages/NewMeetups";
+import NewMeetupsPage from "./pages/NewMeetups";
 import FavouritesPage from "./pages/Favourites";
 
 function App() {
@@ -9,17 +9,21 @@ function App() {
   // my-page.com/
   // the path is here =>/ or a /Favourites
 
-  return <div>
-<Route path='/'>
-  <AllMeetupsPage />
-</Route>
-<Route path='/new-meetup'>
-  <NewMeetupPage />
-</Route>
-<Route path='favourites'>
-  <FavouritesPage />
-</Route>
-  </div>
+  return (
+    <div>
+      <Switch>
+        <Route path="/">
+          <AllMeetupsPage />
+        </Route>
+        <Route path="/new-meetup">
+          <NewMeetupsPage />
+        </Route>
+        <Route path="/fav">
+          <FavouritesPage />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
