@@ -6,14 +6,10 @@ import FavouritesPage from "./pages/Favourites";
 import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
-  // localhost: 3000
-  // my-page.com/
-  // the path is here =>/ or a /Favourites
-
   return (
     <div>
       <BrowserRouter>
-      <MainNavigation />
+        <MainNavigation />
         <Switch>
           <Route path="/" exact>
             <AllMeetupsPage />
