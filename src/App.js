@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupsPage from "./pages/NewMeetups";
 import FavouritesPage from "./pages/Favourites";
-import MainNavigation from "./components/layout/MainNavigation";
-
+// import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/layout";
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <MainNavigation />
+    <BrowserRouter>
+      {/* <MainNavigation /> */}
+      <Layout>
         <Switch>
           <Route path="/" exact>
             <AllMeetupsPage />
@@ -21,8 +21,8 @@ function App() {
             <FavouritesPage />
           </Route>
         </Switch>
-      </BrowserRouter>
-    </div>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
