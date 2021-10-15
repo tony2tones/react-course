@@ -5,6 +5,7 @@ import NewMeetupsPage from "./pages/NewMeetups";
 import FavouritesPage from "./pages/Favourites";
 // import MainNavigation from "./components/layout/MainNavigation";
 import Layout from "./components/layout/layout";
+
 function App() {
   return (
     <BrowserRouter>
