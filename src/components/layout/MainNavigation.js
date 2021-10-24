@@ -14,6 +14,7 @@ function MainNavigation() {
           <li><Link to='/'>All Meetups</Link></li>
           <li><Link to='/fav'>Favourites<span className={classes.badge}>{favoritesCtx.totalFavorites}</span></Link></li>
           <li><Link to='/new-meetup'>New Meetups</Link></li>
+          <li><Link to='/about'>About</Link></li>
         </ul>
       </nav>
     </header>
